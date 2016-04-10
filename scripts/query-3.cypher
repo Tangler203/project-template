@@ -1,9 +1,9 @@
-// Describe your query
-// at the start
-// in comments.
-
+//Seats for 3 seat Constituency
+//This gets a count of seats for the seat constituency
 
 MATCH
-	(n)
+	(n:Constituency)
+WHERE
+	n.seats = 3
 RETURN
-	n;
+	sum(n.seats)
