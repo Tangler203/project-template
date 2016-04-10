@@ -1,9 +1,11 @@
-// Describe your query
-// at the start
-// in comments.
+//Number of Johns
+//This query retreives a count of all candidates with the name John
 
-
-MATCH
-	(n)
+MATCH 
+	(n:Candidate) 
+WHERE
+	n.name
+CONTAINS
+	"John" 
 RETURN
-	n;
+	count(n)
