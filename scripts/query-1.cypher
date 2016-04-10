@@ -1,9 +1,16 @@
-// Describe your query
-// at the start
-// in comments.
 
+//Count of non-major party Candidates
+//This query retreives the number of Candidates that do not belong to the 4 major parties: Fine Gael, Fianna Fail, Sinn Fein and Labour
 
-MATCH
-	(n)
+Match 
+	(n:Candidate)
+WHERE 
+	n.party <> "Fine Gael" 
+AND
+	n.party <> "Fianna Fail" 
+AND 
+	n.party <> "Sinn Fein"
+ANd
+	n.party <> "Labour"
 RETURN
-	n;
+	count(n)
