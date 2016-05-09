@@ -59,3 +59,6 @@ RETURN
 1. [Neo4J website](http://neo4j.com/), the website of the Neo4j database.
 2. [Website](https://adriankavanaghelections.org/2014/10/22/officially-declared-candidates-for-the-20152016-general-election/) where I got my candidates
 3.[TutorialsPoint](http://www.tutorialspoint.com//neo4j/index.htm), I got tutorials from this website
+
+username: neo4j
+password: 123456
